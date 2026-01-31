@@ -1,0 +1,103 @@
+.sectionProducts {
+  margin-bottom: 48px;
+}
+.productType {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+
+  /* приховування скролбара */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.productPreparats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.protyctTypeBtn {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--accent-2);
+  white-space: nowrap;
+}
+.protyctTypeBtn:hover {
+  color: var(--color-add-2);
+}
+.yelow {
+  color: var(--accent-1);
+}
+.labelCheck {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 156%;
+  color: var(--text);
+}
+.labelCheck input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 2px 4px 0px #a3a3a32b;
+
+  box-shadow: 1px 1px 4px 0px #a3a3a326;
+
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.labelCheck input:checked::after {
+  content: "✔";
+  color: #1a4b38;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+  font-size: 14px;
+}
+
+.prodList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .sectionProducts {
+    margin-bottom: 60px;
+  }
+  .productType {
+    row-gap: 16px;
+    column-gap: 32px;
+    /* flex-wrap: wrap; */
+    margin-bottom: 16px;
+  }
+  .productPreparats {
+    margin-bottom: 24px;
+  }
+  .prodList {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .sectionProducts {
+    margin-bottom: 80px;
+  }
+  .productPreparats {
+    margin-bottom: 16px;
+  }
+}

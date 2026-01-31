@@ -1,0 +1,60 @@
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.tabs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.saveBtn {
+  display: flex;
+  color: var(--accent-2);
+  font-size: 14px;
+  border-radius: 30px;
+  border: 2px solid var(--accent-2);
+  box-shadow: 1px 2px 4px 0px #1a4b3882;
+  font-family: var(--font-family);
+  margin-top: 24px;
+  padding: 8px;
+}
+.input {
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+
+  color: var(--text);
+
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -1.1%;
+  text-align: left;
+}
+.textarea {
+  overflow: hidden;
+  resize: none;
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 20px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  color: var(--text);
+}
+.tabBtn {
+  font-family: var(--third-family);
+  font-size: 16px;
+}
+.active {
+  font-size: 28px;
+}

@@ -1,0 +1,60 @@
+.overlayMaps {
+	border-radius: 20px;
+	width: 100%;
+	aspect-ratio: 343 / 509;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	box-shadow: 2px 2px 4px 0 rgba(210, 201, 181, 0.41),
+		-1px -1px 4px 0 rgba(210, 201, 181, 0.19);
+	position: relative;
+	overflow: hidden;
+}
+.maps {
+	border: none;
+	min-width: 100%;
+	height: 100%;
+}
+.btnSmallScreen {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+	border-radius: 100%;
+	background: var(--accent-2);
+}
+.iconSmall {
+	width: 18px;
+	height: 18px;
+	fill: var(--fone-1);
+}
+@media screen and (min-width: 768px) {
+	.overlayMaps {
+		border-radius: 50px;
+		width: 100%;
+		aspect-ratio: 1198 / 707;
+	}
+	.btnSmallScreen {
+		position: absolute;
+		top: 24px;
+		right: 24px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.btnSmallScreen:hover {
+		background: var(--color-add-2);
+	}
+	.btnSmallScreen:active {
+		background: var(--accent-3);
+	}
+	.btnSmallScreen:hover .iconSmall,
+	.btnSmallScreen:active .iconSmall {
+		stroke: var(--accent-2);
+	}
+}

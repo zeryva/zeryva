@@ -1,0 +1,87 @@
+.SectionKeyValues {
+  margin-bottom: 80px;
+}
+.KeyValuesWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.title {
+  color: rgba(26, 75, 56, 1);
+
+  font-family: var(--third-family);
+  font-size: clamp(32px, calc((46 / 1440) * 100vw), 46px);
+  letter-spacing: 0%;
+  font-weight: 900;
+  line-height: 48px;
+  /* letter-spacing: 0%; */
+  text-align: left;
+}
+
+.KeyValuesList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.KeyValuesItem {
+  width: calc((100% - 24px) / 2);
+  /* height: 128px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+.iconBlock {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 4px;
+  border-radius: 16px;
+  background: var(--accent-2);
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--accent-1);
+}
+.icon_1 {
+  stroke: var(--accent-1);
+  fill: none;
+}
+.text {
+  color: rgba(40, 40, 40, 1);
+
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    /* font-size: 36px; */
+    line-height: 58px;
+  }
+  .KeyValuesItem {
+    width: calc((100% - 72px) / 4);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .title {
+    /* font-size: 46px; */
+    line-height: 69px;
+  }
+}

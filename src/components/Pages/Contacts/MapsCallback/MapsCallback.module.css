@@ -1,0 +1,128 @@
+.sectionMapCall {
+	margin-bottom: 48px;
+}
+.mapCallWrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.mapWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+}
+.mapWrapper,
+.callBack {
+	width: 100%;
+}
+.callBack {
+	max-width: 588px;
+	align-self: center;
+}
+
+.overlayMaps {
+	overflow: hidden;
+	border-radius: 20px;
+	width: 100%;
+	aspect-ratio: 588 / 347;
+	/* width: 588px;
+	height: 347px; */
+	box-shadow: 2px 2px 4px 0 rgba(210, 201, 181, 0.41),
+		-1px -1px 4px 0 rgba(210, 201, 181, 0.19);
+	position: relative;
+}
+.btnFullScreen {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	background: var(--accent-2);
+}
+.iconFull {
+	width: 18px;
+	height: 18px;
+	stroke: var(--fone-1);
+}
+.maps {
+	border: none;
+	width: 100%;
+	height: 100%;
+	/* width: 588px;
+	height: 347px; */
+}
+.roadBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 30px;
+	padding: 8px 9px;
+	width: 160px;
+	height: 37px;
+	box-shadow: 1px 2px 4px 0 rgba(244, 166, 0, 0.48);
+	background: var(--accent-1);
+
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 150%;
+	color: var(--accent-2);
+}
+
+@media screen and (min-width: 768px) {
+	.sectionMapCall {
+		margin-bottom: 80px;
+	}
+	.btnFullScreen {
+		position: absolute;
+		top: 24px;
+		right: 24px;
+	}
+	.roadBtn {
+		padding: 12px 12px;
+		width: 282px;
+		height: 49px;
+		font-size: 15px;
+		line-height: 167%;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.mapCallWrapper {
+		flex-direction: row;
+	}
+	.mapWrapper,
+	.callBack {
+		width: calc(50% - 12px);
+	}
+	.overlayMaps {
+		border-radius: 50px;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.roadBtn:hover {
+		box-shadow: 1px 2px 4px 0 rgba(122, 170, 141, 0.47);
+		background: var(--color-add-2);
+	}
+	.roadBtn:active {
+		box-shadow: 0 2px 4px 0 rgba(131, 189, 22, 0.48);
+		background: var(--accent-3);
+	}
+	.btnFullScreen:hover {
+		background: var(--color-add-2);
+	}
+	.btnFullScreen:active {
+		background: var(--accent-3);
+	}
+	.btnFullScreen:hover .iconFull,
+	.btnFullScreen:active .iconFull {
+		stroke: var(--accent-2);
+	}
+}

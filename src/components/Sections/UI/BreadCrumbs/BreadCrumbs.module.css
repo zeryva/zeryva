@@ -1,0 +1,55 @@
+.sectionBreadCrubs {
+	padding: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.breadItem {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+}
+.chevronBlock {
+	width: 16px;
+	height: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+.chevronIcon {
+	width: 4px;
+	height: 7px;
+	stroke: rgba(26, 75, 56, 1);
+	fill: none;
+}
+.breadWrapper {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 24px 0;
+}
+.firstStep {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+.firstStep,
+.nextStep {
+	color: rgba(26, 75, 56, 1);
+
+	font-family: var(--font-family);
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 25px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+.nextStep {
+	color: rgba(244, 166, 0, 1);
+}
+@media screen and (min-width: 768px) {
+	.breadWrapper {
+		padding: 54px 0 24px;
+	}
+}

@@ -1,0 +1,112 @@
+.card {
+  background-color: var(--color-add-search);
+  box-shadow:
+    2px 2px 4px 0px #d2c9b569,
+    -1px -1px 4px 0px #d2c9b530;
+  border-radius: 20px;
+  padding: 5px 8px 8px 8px;
+
+  width: clamp(160px, calc((180 / 1440) * 100vw), 180px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: ani 2s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blockDescr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 125px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.title {
+  color: var(--accent-3);
+  font-family: var(--third-family);
+  overflow-wrap: break-word;
+  word-break: break-word;
+  font-size: 16px;
+
+  letter-spacing: 0.06em;
+}
+.description {
+  min-height: 63px;
+
+  overflow-wrap: break-word;
+  word-break: break-word;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--text);
+}
+
+.price {
+  padding-bottom: 8px;
+
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 156%;
+  color: var(--text);
+}
+.linkWrapp {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-1);
+  box-shadow: 1px 2px 4px 0px #f4a60078;
+  border-radius: 30px;
+  padding: 4px 10.5px;
+  text-align: center;
+  transition: background-color 0.25s ease;
+}
+.link {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  white-space: nowrap;
+
+  color: var(--accent-2);
+
+  min-width: 100%;
+  display: block;
+}
+.linkWrapp:hover,
+.linkWrapp:active {
+  background-color: var(--accent-3);
+  box-shadow: 1px 2px 4px 0px #83bd1678;
+}
+@media screen and (min-width: 768px) {
+  .blockDescr {
+    min-height: 121px;
+  }
+  .price {
+    padding-bottom: 16px;
+  }
+  .linkWrapp {
+    padding: 6px 10.5px;
+  }
+  .link {
+    font-size: 14px;
+  }
+  .linkWrapp:active {
+    background-color: var(--color-add-2);
+    box-shadow: 1px 2px 4px 0px #1a4b3882;
+  }
+}

@@ -1,0 +1,37 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 30px;
+}
+.item {
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid var(--accent-2);
+}
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+.btnsWrapp {
+  display: flex;
+  gap: 30px;
+}
+.btn {
+  max-height: 29px;
+  padding: 6px;
+  color: var(--accent-2);
+  border-radius: 30px;
+  border: 1px solid var(--accent-2);
+  box-shadow: 1px 2px 4px 0px #1a4b3882;
+}
+.btnDel {
+  max-height: 29px;
+  padding: 6px;
+  color: var(--color-add-red);
+  border-radius: 30px;
+  border: 1px solid var(--text);
+  box-shadow: 1px 2px 4px 0px #36363682;
+}

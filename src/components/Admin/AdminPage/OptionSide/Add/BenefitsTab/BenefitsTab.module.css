@@ -1,0 +1,56 @@
+.benefCont {
+  background-color: var(--color-add-line);
+  padding: 20px;
+}
+.listBenefits {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item {
+  box-shadow: 0.5px 1px 2px 0px #1a4b3882;
+  border-radius: 20px;
+  padding: 8px;
+  background-color: var(--fone-1);
+  font-family: var(--third-family);
+  font-size: 14px;
+}
+.textar {
+  font-family: var(--font-family);
+  font-size: 14px;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 8px;
+  color: var(--text);
+  margin-top: 10px;
+}
+.btn,
+.add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-2);
+  font-size: 12px;
+  border-radius: 20px;
+  border: 1px solid var(--accent-2);
+  box-shadow: 0.5px 1px 2px 0px #1a4b3882;
+  font-family: var(--font-family);
+  background-color: var(--color-add-line);
+  padding: 4px;
+}
+.btn {
+  margin-top: 4px;
+  color: var(--color-add-red);
+  background-color: transparent;
+}
+.add {
+  font-size: 14px;
+  background-color: var(--fone-1);
+}
+.inpBenef {
+  padding: 4px;
+  width: 100%;
+  border-radius: 8px;
+  font-family: var(--font-family);
+  font-size: 14px;
+}

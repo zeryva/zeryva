@@ -1,0 +1,30 @@
+[
+	{
+		"id": 0,
+		"imgMob": "/hero/first_mob_1.webp",
+		"img": "/hero/first_1.webp",
+		"title": "Інноваційні підходи",
+		"description": "До природного та стійкого розвитку культур"
+	},
+	{
+		"id": 1,
+		"imgMob": "/hero/second_mob_1.webp",
+		"img": "/hero/second_1.webp",
+		"title": "Унікальні біопрепарати",
+		"description": "Для розкриття потенціалу врожайності "
+	},
+	{
+		"id": 2,
+		"imgMob": "/hero/third_mob_1.webp",
+		"img": "/hero/third_1.webp",
+		"title": "Розробка і виробництво",
+		"description": "Добрив нового покоління"
+	},
+	{
+		"id": 3,
+		"imgMob": "/hero/last_mob_1.webp",
+		"img": "/hero/last_1.webp",
+		"title": "Чесне партнерство",
+		"description": "Та підтримка на кожному етапі"
+	}
+]

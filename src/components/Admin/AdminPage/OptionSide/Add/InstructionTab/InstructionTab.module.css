@@ -1,0 +1,30 @@
+.instrCont {
+  background-color: var(--color-add-not-active);
+  padding: 20px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-2);
+  font-size: 12px;
+  border-radius: 20px;
+  border: 1px solid var(--accent-2);
+  box-shadow: 0.5px 1px 2px 0px #1a4b3882;
+  font-family: var(--font-family);
+  background-color: var(--fone-1);
+  padding: 4px;
+}
+.table {
+  max-width: 573px;
+  padding-top: 16px;
+}
+.delBtn {
+  font-family: var(--font-family);
+  font-size: 12px;
+  box-shadow: 0.5px 1px 2px 0px #1a4b3882;
+  border: 1px solid var(--text);
+  border-radius: 20px;
+  padding: 2px;
+  margin-bottom: 4px;
+}

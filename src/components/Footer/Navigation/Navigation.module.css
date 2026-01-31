@@ -1,0 +1,25 @@
+.navigationCont {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.title,
+.navigation {
+  font-family: var(--font-family);
+}
+.title {
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0;
+}
+.link:hover {
+  color: var(--color-add-2);
+}
+.link:active {
+  color: var(--accent-1);
+}

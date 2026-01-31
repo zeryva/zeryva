@@ -1,0 +1,15 @@
+.descrCont {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-add-2);
+  padding: 20px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--third-family);
+  font-size: 14px;
+  gap: 4px;
+  font-weight: 600;
+}

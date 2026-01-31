@@ -1,0 +1,23 @@
+.aboutWrapper {
+  margin-top: 119px;
+  animation: ani 2s forwards;
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aboutWrapper {
+    margin-top: 107px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .aboutWrapper {
+    margin-top: 177px;
+  }
+}

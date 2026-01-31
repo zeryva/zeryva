@@ -1,0 +1,50 @@
+.wrappContacts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.title,
+.phone {
+  font-family: var(--font-family);
+}
+.title {
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: 0;
+}
+.wrappLoc,
+.wrappTel,
+.otherSoc,
+.wrappMail {
+  display: flex;
+  gap: 8px;
+}
+.icon_a,
+.icon_aa {
+  fill: var(--fone-1);
+  width: 20px;
+  height: 20px;
+  display: block;
+  transition: color 0.25s ease;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+.address,
+.mail {
+  color: var(--fone-1);
+}
+.phone:hover {
+  color: var(--color-add-2);
+}
+.phone:active {
+  color: var(--accent-1);
+}
+.icon_aa:hover {
+  color: var(--color-add-2);
+}
+.icon_aa:active {
+  color: var(--accent-1);
+}

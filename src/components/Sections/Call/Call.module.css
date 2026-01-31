@@ -1,0 +1,118 @@
+.wrappCall {
+  background-color: var(--accent-2);
+  margin-bottom: 48px;
+  max-height: 350px;
+}
+.callCont {
+  display: flex;
+  padding: 32px 16px;
+  justify-content: space-between;
+  align-items: end;
+}
+.wrappTitle {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  text-align: start;
+  color: var(--fone-1);
+  margin-right: -110px;
+  font-family: var(--third-family);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(32px, calc((46 / 1440) * 100vw), 46px);
+  /* letter-spacing: 0.06em; */
+}
+.btnCall {
+  color: var(--accent-2);
+  font-family: var(--font-family);
+  padding: 8px;
+  font-weight: 700;
+  border-radius: 30px;
+  box-shadow: 1px 2px 4px 0px #83bd1678;
+  background-color: var(--accent-3);
+  max-width: 183px;
+  margin-top: 24;
+  font-size: 14px;
+}
+.btnCall:hover,
+.btnCall:active {
+  background-color: var(--color-add-2);
+  box-shadow: 1px 2px 4px 0px #7aaa8d78;
+}
+.img {
+  position: relative;
+  display: block;
+  width: clamp(138px, calc((238 / 1440) * 100vw), 238px);
+  aspect-ratio: 238 / 231;
+  min-width: 138px;
+  min-height: 134px;
+}
+.animateTitle {
+  opacity: 0;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+.animateTitle {
+  transform: translateX(-50px);
+}
+.animateTitle.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media screen and (min-width: 375px) and (max-width: 460px) {
+  .title {
+    width: 326px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .btnCall {
+    max-width: 160px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .callCont {
+    padding: 32px 64px;
+  }
+}
+
+@media screen and (min-width: 880px) {
+  .wrappCall {
+    margin-bottom: 80px;
+  }
+  .callCont {
+    align-items: center;
+  }
+  .btnCall {
+    font-size: 15px;
+    max-width: 239px;
+    padding: 12px 30px;
+    margin-top: 32;
+  }
+  .btnCall:active {
+    background-color: var(--fone-1);
+    box-shadow: 1px 2px 4px 0px #eff3e57d;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .callCont {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}

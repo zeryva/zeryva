@@ -1,0 +1,220 @@
+.mobHeader {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+.mobHeaderTop {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+.mobLogoBlock {
+	width: 183px;
+	height: 38px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+.image {
+	width: 45px;
+	height: 38px;
+}
+.titleMob {
+	width: 130px;
+	height: 36px;
+
+	font-family: var(--font-family);
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 18px;
+	letter-spacing: 0%;
+	text-align: left;
+}
+.mainTitle {
+	color: rgba(239, 243, 229, 1);
+}
+.notMainTitle {
+	color: var(--accent-2);
+}
+.titleScroll {
+	color: rgba(239, 243, 229, 1);
+}
+
+.mobInfoAndBurger {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+.socialInfo {
+	display: flex;
+	flex-direction: column;
+}
+.link {
+	font-family: var(--font-family);
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 0%;
+	text-align: left;
+	padding-top: 6px;
+}
+.mainLink {
+	color: rgba(239, 243, 229, 1);
+}
+.notMainLink {
+	color: var(--accent-2);
+}
+.linkScroll {
+	color: rgba(239, 243, 229, 1);
+}
+.messengersList {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 8px;
+}
+.messengersItem {
+}
+.blockIcon {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-shrink: 0;
+}
+.iconMessengers {
+	width: 20px;
+	height: 20px;
+}
+.mainIconMessengers {
+	color: rgba(239, 243, 229, 1);
+}
+.notMainIconMessengers {
+	color: var(--accent-2);
+}
+.iconMessengersScroll {
+	color: rgba(239, 243, 229, 1);
+}
+.burgerBtn {
+	width: 32px;
+	height: 32px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 10px;
+	padding: 4px;
+
+	border-radius: 16px;
+	background: rgba(239, 243, 229, 1);
+}
+
+.mainBtn {
+	background: var(--fone-1);
+}
+.notMainBtn {
+	background: var(--accent-2);
+}
+.scrollBtn {
+	background: var(--fone-1);
+}
+.iconBurger {
+	width: 19px;
+	height: 14px;
+}
+.mainIconBurger {
+	fill: var(--accent-2);
+}
+
+.notMainIconBurger {
+	fill: var(--fone-1);
+}
+.iconBurgerScrolled {
+	fill: var(--accent-2);
+}
+
+.line {
+	width: calc(100% + 32px);
+	height: 1px;
+	background: rgba(239, 243, 229, 0.44);
+}
+
+.mobHeaderBotom {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.searchBtn {
+	width: 32px;
+	height: 32px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 4px;
+
+	border-radius: 16px;
+}
+.mainSearchBtn {
+	background: rgba(239, 243, 229, 1);
+}
+.notMainSearchBtn {
+	background: var(--accent-2);
+}
+.scrollSearchBtn {
+	background: rgba(239, 243, 229, 1);
+}
+.iconSearch {
+	width: 18px;
+	height: 18px;
+}
+.mainIconColor {
+	fill: var(--accent-2);
+}
+.notMainIconColor {
+	fill: var(--fone-1);
+}
+.scrolledIconSearch {
+	fill: var(--accent-2);
+}
+.socIconBlock {
+	width: 136px;
+	height: 32px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	padding: 4px 8px;
+
+	border-radius: 40px;
+	background: rgba(244, 166, 0, 1);
+}
+.socLink {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.socIconMob {
+	width: 20px;
+	height: 20px;
+	fill: rgba(249, 249, 249, 1);
+}
+
+/* @media screen and (min-width: 768px) {
+	.line {
+		width: calc(100% + 128px);
+	}
+} */
+@media screen and (min-width: 768px) {
+	.mobHeader {
+		display: none;
+	}
+}

@@ -1,0 +1,55 @@
+.mainCont {
+  background-color: var(--color-state-add);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.uploadBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-2);
+  font-size: 14px;
+  border-radius: 20px;
+  border: 1px solid var(--accent-2);
+  box-shadow: 0.5px 1px 2px 0px #1a4b3882;
+  font-family: var(--font-family);
+  padding: 4px;
+  max-width: 164px;
+}
+.checkboxSell {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-family);
+}
+
+.btnDelete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-add-red);
+  font-size: 12px;
+  border-radius: 20px;
+  border: 1px solid var(--color-add-3);
+  box-shadow: 0.5px 1px 2px 0px #1a4b3882;
+  font-family: var(--font-family);
+  padding: 4px;
+  margin-top: 4px;
+}
+.title {
+  font-family: var(--third-family);
+  color: var(--text);
+}
+.values {
+  font-family: var(--font-family);
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: var(--third-family);
+  font-size: 14px;
+  font-weight: 600;
+}

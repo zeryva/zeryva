@@ -1,0 +1,111 @@
+.infoWrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 134px;
+  z-index: 3;
+}
+
+.infoContainer {
+  /* height: calc(100dvh - 244px); */
+
+  /* width: 833px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.title {
+  height: auto;
+
+  color: rgba(239, 243, 229, 1);
+
+  font-family: var(--third-family);
+  /* font-size: clamp(46px, calc((46 / 375) * 100vw), 64px); */
+  font-size: clamp(46px, calc((100 / 1440) * 100vw), 100px);
+
+  /* letter-spacing: 0.06em; */
+  font-weight: 800;
+  line-height: clamp(46px, calc((46 / 375) * 100vw), 64px);
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.description {
+  height: 120px;
+  color: var(--fone-1);
+
+  font-family: var(--third-family);
+  /* font-size: clamp(28px, calc((28 / 375) * 100vw), 32px); */
+  font-size: clamp(28px, calc((32 / 1440) * 100vw), 32px);
+
+  font-weight: 600;
+  line-height: clamp(40px, calc((40 / 375) * 100vw), 46px);
+  /* letter-spacing: -0.07em; */
+  text-align: left;
+}
+
+.downloadBtn {
+  width: 214px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 32px;
+
+  border-radius: 30px;
+  box-shadow: 1px 2px 4px 0px rgba(244, 166, 0, 0.48);
+  background: rgba(244, 166, 0, 1);
+
+  color: rgba(26, 75, 56, 1);
+
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.downloadBtn:active {
+  box-shadow: 1px 2px 4px 0 rgba(26, 75, 56, 0.51);
+  background: #7aaa8d;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    width: 654px;
+    /* height: 208px; */
+    /* font-size: clamp(64px, calc((64 / 768) * 100vw), 72px); */
+    line-height: clamp(64px, calc((64 / 768) * 100vw), 72px);
+  }
+  .description {
+    height: auto;
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .downloadBtn {
+    width: 221px;
+    height: 49px;
+    padding: 12px 30px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .infoWrapper {
+    margin-top: 204px;
+  }
+  .title {
+    /* height: 208px; */
+    /* font-size: clamp(72px, calc((72 / 1280) * 100vw), 80px); */
+    line-height: clamp(72px, calc((72 / 1280) * 100vw), 84px);
+  }
+  .downloadBtn:hover:not(:active) {
+    box-shadow: 1px 2px 4px 0 rgba(131, 189, 22, 0.48);
+    background: #83bd16;
+  }
+}
